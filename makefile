@@ -8,4 +8,7 @@ format:
 lint:
 	pylint --disable=R,C codigo.py
 
-all: install lint test
+test:
+	pytest
+
+all: install format lint test
